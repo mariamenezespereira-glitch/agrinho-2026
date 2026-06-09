@@ -1,0 +1,105 @@
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f9f4;
+    color: #333;
+    padding-bottom: 60px;
+}
+
+/* Topo do Site */
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Organização dos Cards */
+.container-flashcards {
+    max-width: 1000px;
+    margin: 3rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+/* Estilo do Card */
+.flashcard {
+    background-color: white;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border: 1px solid #c8e6c9;
+}
+
+.card-topo {
+    background-color: #1b5e20;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.card-conteudo {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-conteudo p {
+    font-weight: bold;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.resposta {
+    display: block;
+    font-size: 0.95rem;
+    color: #555;
+    background-color: #f1f8e9;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #81c784;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adaptação para Celular */
+@media (max-width: 600px) {
+    .container-flashcards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flashcard {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    footer {
+        position: static;
+    }
+}
